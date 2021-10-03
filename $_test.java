@@ -384,6 +384,51 @@ class NegativeFactors {
     }
 }
 
+class HalfPyramid{
+    public static void main(String [] args){
+        int row = 5;
+        for (int count = 0; count <= row; count++){
+            for ( int column = 0; column <= count; column++){
+            System.out.print("*");
+
+        }
+
+        System.out.println();
+    }
+}
+}
+
+class NumPyramid{
+    public static void main(String [] args){
+
+        int num = 5;
+
+        for ( int count = 1; count <= num; count ++) {
+            for (int column = 1; column <= count; column++) {
+                System.out.print(column);
+
+            }
+
+
+            System.out.println();
+        }
+    }
+}
+
+class Inverted{
+    public static void main (String [] args ){
+        int num = 5;
+
+        for (int count = num; count >= 1; count--){
+            for(int column = 0; column <=  count; column++){
+                System.out.print("*");
+
+            }
+                System.out.println();
+        }
+
+    }
+}
 
 
 
