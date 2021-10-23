@@ -1,4 +1,4 @@
-package Practise;
+package Jexercises;
 
 public class PhoneNumberValidation {
 }

@@ -1,4 +1,4 @@
-package Practise;
+package Jexercises;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class TryingException {

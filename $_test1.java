@@ -1,4 +1,4 @@
-package Practise;
+package Jexercises;
 import java.util.Scanner;
 public class $_test1 {
     public static void main(String [] args){
