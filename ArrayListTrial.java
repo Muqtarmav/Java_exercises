@@ -1,4 +1,4 @@
-package Jexercises;
+package Practise;
 
 import java.util.ArrayList;
 

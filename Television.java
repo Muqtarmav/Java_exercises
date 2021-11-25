@@ -36,12 +36,12 @@ public class Television {
     }
 
     public void increaseChannel(int channel){
-        if(power == true && channel < 120)
+        if(power == true && channel <= 120)
             channel++;
 
     }
     public void setDecreaseChannel(){
-        if(power == true && channel > 1){
+        if(power == true && channel >= 1){
             channel--;
         }
     }
@@ -58,7 +58,7 @@ public class Television {
     }
 
     public void setDecreaseVolume(int volume){
-        if (power == true && volume <= 7)
+        if (power == true && volume >= 1)
             volume--;
 
     }

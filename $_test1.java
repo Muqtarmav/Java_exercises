@@ -1,4 +1,4 @@
-package Jexercises;
+package Practise;
 import java.util.Scanner;
 public class $_test1 {
     public static void main(String [] args){
@@ -18,6 +18,8 @@ public class $_test1 {
         System.out.println(total);
 
     }
+
+
 }
 
 class Multiply_float{
@@ -152,7 +154,7 @@ class PositiveNegative {
         num1 = input.nextInt();
 
         if (num1 > 0) {
-            System.out.println("its a psotive number");
+            System.out.println("its a positive number");
         } else if (num1 < 0) {
             System.out.println("its a negative number");
         } else {
