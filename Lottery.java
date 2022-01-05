@@ -1,4 +1,4 @@
-package Practise;
+package Practises;
 import java.util.Scanner;
 public class Lottery {
     public static void main(String[] args) {
