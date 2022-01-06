@@ -1,9 +1,7 @@
 package holidayTasks;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.LinkedList;
+import java.util.*;
+
 public class CollectionTest {
 
     public static void main(String[] args) {
@@ -75,5 +73,112 @@ public class CollectionTest {
 
            for (String color : colors)
                System.out.println(color);
+        }
+    }
+
+
+    class TestCollections{
+        public static void main(String[] args) {
+
+            ArrayList<String> colors = new ArrayList<>();
+
+            colors.add("green");
+            colors.add("yellow");
+            colors.add("blue");
+            colors.add("red");
+
+            System.out.println(colors);
+
+            ArrayList<String>color = new ArrayList();
+
+            color.add("purple");
+            color.add("pink");
+
+
+            System.out.println(color);
+
+            ArrayList<String> c1 = (ArrayList<String>) (colors.clone());
+            c1.addAll(color);
+
+            System.out.println(c1);
+
+
+            c1 =(ArrayList<String>) (colors.clone());
+            c1.removeAll(color);
+
+            System.out.println(c1);
+
+        }
+
+    }
+
+
+    class LinkedListss{
+        public static void main(String[] args) {
+
+
+            String [] array = {"blue", "red"};
+
+            LinkedList<String> cities = new LinkedList<>(Arrays.asList(array));
+
+            cities.add("lagos");
+            cities.addFirst("ibadan");
+            cities.addLast("ilorin");
+            cities.add("kano");
+
+            System.out.println(cities);
+
+
+            array = cities.toArray(new String[cities.size()]);
+
+            System.out.println("array");
+
+            for ( String name : array){
+                System.out.println(name);
+            }
+        }
+    }
+
+
+    class Sort1{
+        public static void main(String[] args) {
+
+            String [] suits = {"hearts", "diamond", "clubs", "spades"};
+
+            List<String> list = Arrays.asList(suits);
+
+            System.out.println(list);
+
+            Collections.sort(list);
+
+            System.out.println(list);
+        }
+    }
+
+    class SortDescending{
+        public static void main(String[] args) {
+
+            String [] suits = {"hearts", "diamond", "clubs", "spades"};
+
+            List<String> list = Arrays.asList(suits);
+
+            System.out.println(list);
+
+            Collections.sort(list, Collections.reverseOrder());
+            System.out.println(list);
+        }
+    }
+    class JFD{
+        public static void main(String[] args) {
+
+            String [] colors = {"blue", "red", "orange", "purple"};
+
+            List<String> link = Arrays.asList(colors);
+
+            System.out.println(link);
+
+            Collections.sort(link);
+
+            System.out.println(link);
         }
     }
