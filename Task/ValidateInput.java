@@ -10,10 +10,10 @@ public class ValidateInput {
         return lastName.matches("[a-zA-z]+(['-][a-zA-Z]+)*");
     }
 
-    public static boolean validatePhoneNumber(String phoneNumber){
+    public static boolean validatePhoneNumber(String phoneNumber) {
         return phoneNumber.matches("[1-9]\\d{2}-[1-9]\\d{2}-\\d{4}]");
 
 
-
+    }
 
 }
