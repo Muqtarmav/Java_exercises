@@ -179,3 +179,163 @@ class MultiArray{
 //            }
 //        }
 
+
+    class rkjek{
+        public static void main(String[] args) {
+
+            int number = 5;
+            int factorial = 1;
+
+            for ( int count = 1; count <= number; count++ ){
+
+                factorial = factorial * count;
+            }
+
+            System.out.printf("Factorial of %d = %d", number , factorial);
+        }
+    }
+
+
+    class countIntegers{
+        public static void main(String[] args) {
+
+            Scanner input = new Scanner(System.in);
+
+            int count = 0;
+            int digit = 399476839;
+
+            while (digit != 0){
+
+                digit = digit / 10;
+                ++count;
+            }
+
+            System.out.println("this number contauin " + count);
+
+//            int count = 0;
+//            int number = 7833030;
+////            System.out.println("enter  number");
+////           int  number = input.nextInt();
+//
+//
+//            for (; number != 0; number /= 10,  ++count){
+//
+//            }
+//
+//            System.out.println("number of digits " + count);
+
+
+
+
+        }
+    }
+
+
+    class ielk{
+        public static void main(String[] args) {
+
+            int num = 1234;
+            int reversed = 0;
+
+            while  (num != 0){
+
+                int digit = num % 10;
+                reversed = reversed * 10 + digit;
+
+
+                num = num / 10;
+            }
+
+            System.out.println("reversed number " + reversed);
+        }
+
+
+    }
+
+
+    class fkle {
+
+        public static void main(String[] args) {
+
+            String  word = "radar";
+
+            for (int count = word.length() - 1; count >= 0; count--){
+                System.out.println(word.charAt(count));
+            }
+
+        }
+    }
+
+
+class uweiie {
+    public static boolean containedDigit(String str) {
+        for (int count = 0; count < str.length(); count++) {
+            if (!Character.isDigit(str.charAt(count))) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter words");
+        String str = input.next();
+
+        System.out.println(containedDigit(str));
+
+    }
+}
+
+
+class fke {
+    public static boolean characterr(String words) {
+
+        for (int count = 0; count <= words.length(); count++) {
+
+            if (!Character.isDigit(words.charAt(count))){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
+
+        public static void main (String[]args){
+
+        Scanner input = new Scanner(System.in);
+
+            System.out.println("enter words");
+            String words = input.nextLine();
+
+
+            System.out.println(characterr(words));
+
+
+        }
+    }
+
+
+    class countDigits{
+        public static void main(String[] args) {
+
+            Scanner input = new Scanner(System.in);
+            int count = 0;
+
+            System.out.println("enter a number");
+            int number = input.nextInt();
+
+            while ( number != 0){
+                number = number / 10;
+                count++;
+            }
+
+            System.out.println("number of digits " + count);
+        }
+    }
