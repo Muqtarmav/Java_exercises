@@ -161,9 +161,7 @@ class countVowels{
             int count = 0;
 
             if ( !(str == null || str.isEmpty())){
-
                 String [] w = str.split("\\s++");
-
                 count = w.length;
             }
 
@@ -431,7 +429,47 @@ class UsingSplit {
 
     }
 
-
 }
 
+    class Splitt{
+        public static void main(String[] args) {
+
+            String word = "Thank-you-for-watching-these-videos";
+
+            String [] array = word.split("-+");
+
+            for (String a : array)
+                System.out.println(a);
+
+
+        }
+    }
+
+
+class CountTheWord{
+    public static int counting(String words) {
+
+        int count = 0;
+                  if (words != null || words.isEmpty()) {
+                      String [] array = words.split("\\s");
+
+                      count = array.length;
+            }
+                  return count;
+
+        }
+
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("enter a word");
+
+        String words = input.nextLine();
+
+        System.out.println(counting(words));
+    }
+
+    }
 
