@@ -286,3 +286,152 @@ class eke {
 
 
 
+class reversedString{
+    public static void main(String[] args) {
+
+        String name = "adetunji";
+
+        for ( int count = name.length() - 1 ; count >= 0; count--){
+            System.out.print(name.charAt(count));
+        }
+
+        System.out.println();
+
+        System.out.println(name.indexOf('e'));
+
+        System.out.println(name.lastIndexOf('n'));
+    }
+}
+
+
+class hyej{
+    public static void main(String[] args) {
+
+        StringBuilder builder = new StringBuilder("hello how are you");
+
+        System.out.println(builder.length());
+        builder.setLength(10);
+
+        System.out.println("the capacity");
+        System.out.println(builder.capacity());
+
+        builder.ensureCapacity(75);
+
+        System.out.println("new length");
+        System.out.println(builder.length());
+
+
+        System.out.println("");
+    }
+}
+
+
+class StringMethod{
+    public static void main(String[] args) {
+
+        StringBuilder b = new StringBuilder("house");
+
+        b.setCharAt(2, 'r');
+
+        System.out.println(b.charAt(2));
+        System.out.println(b);
+
+        b.reverse();
+
+        System.out.println(b);
+    }
+}
+
+
+class StringBuilderAppend{
+
+    public static void main(String[] args) {
+
+
+        StringBuilder buffer = new StringBuilder();
+
+        Object objectRef = "hello";
+        String string = "goodbye";
+        char[] charArray = {'a', 'b', 'c', 'd', 'e', 'f'};
+        boolean booleanValue = true;
+        char characterValue = 'Z';
+        int integerValue = 7;
+        long longValue = 10000000000L;
+        float floatValue = 2.5f;
+         double doubleValue = 33.333;
+
+         buffer.append(objectRef)
+                 .append("\n")
+                 .append(string)
+                 .append("\n")
+                 .append(charArray)
+                 .append("\n")
+                 .append(booleanValue)
+                    .append("\n")
+                 .append(characterValue).append("\n")
+                 .append(integerValue)
+                 .append("\n")
+                 .append(longValue)
+                 .append("\n")
+                 .append(floatValue)
+                 .append("\n")
+                 .append(doubleValue);
+
+        System.out.printf("buffer contains %n%s%n  ", buffer.toString());
+    }
+}
+
+class StringTokenizer{
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("enter a string");
+        String name = input.nextLine();
+
+
+        String [] split = name.split("");
+
+
+        System.out.println("this is the total length " + split.length);
+        for ( String b : split){
+            System.out.println(b);
+        }
+    }
+
+}
+
+
+class UsingSplit {
+
+    public static void main(String[] args) {
+
+        String word = "tola@gmail@.com";
+
+        String[] array = word.split("@", 4);
+
+        for (String a : array)
+            System.out.print(a);
+
+        String name = "ade Muqtar Mav";
+
+        String[] w = name.split(" ");
+
+        for (String b : w)
+            System.out.print(b);
+
+
+        String symbols = "word1, word2 word3@word4?word5.word6";
+
+        String[] newArray = symbols.split("[,@?.]+");
+
+        for (String c : newArray){
+            System.out.println(c);
+        }
+
+    }
+
+
+}
+
+
