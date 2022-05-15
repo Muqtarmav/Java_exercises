@@ -115,6 +115,7 @@ class countVowels{
 
             System.out.println("enter words");
             String word = input.nextLine();
+
             int count = word.length();
             int countWithoutA = word.replace("a", "").length();
 
@@ -393,7 +394,7 @@ class StringTokenizer{
 
         System.out.println("this is the total length " + split.length);
         for ( String b : split){
-            System.out.println(b);
+            System.out.print(b);
         }
     }
 
@@ -473,3 +474,93 @@ class CountTheWord{
 
     }
 
+
+    class countNumber {
+        public static void main(String[] args) {
+
+            int count = 0;
+            int number = 738982949;
+
+            while (number != 0) {
+
+                number = number / 10;
+                count++;
+            }
+
+            System.out.println(count);
+        }
+    }
+
+
+    class CountSymbols {
+        public static void main(String[] args) {
+
+            int vowels = 0;
+            int consonant = 0;
+            int digit = 0;
+            int spaces = 0;
+
+
+            String word = "what is your name mr man";
+
+            for (int count = 0; count < word.length(); count++) {
+                char ch = word.charAt(count);
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                    vowels++;
+                }
+
+               else  if (ch >= 'a' && ch <= 'z') {
+                    consonant++;
+
+                }
+
+              else if (ch == '0' || ch == '9'){
+                    digit++;
+                }
+
+              else if ( ch == ' '){
+                  spaces++;
+              }
+
+            }
+
+            System.out.println("this is the total vowels " + vowels);
+            System.out.println("this is the total consonant" + consonant);
+            System.out.println("this is the digit " + digit);
+            System.out.println("this is the total space " + spaces);
+        }
+
+    }
+
+
+    class RemoveSpaces {
+        public static void main(String[] args) {
+
+            String word = "hello who is there";
+
+            String[] a = word.split(" ");
+
+            for (String b : a) {
+                System.out.print(b);
+            }
+        }
+
+    }
+
+
+    class countCharacter{
+        public static void main(String[] args) {
+
+            String word = "amazing";
+            int count = word.length();
+
+            int countWithoutA = word.replace("a", "").length();
+
+            int totalCount = count - countWithoutA;
+
+            System.out.println("this is the total number of A " + totalCount);
+
+            System.out.println("total number of word " + count);
+
+        }
+    }
