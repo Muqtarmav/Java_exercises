@@ -679,3 +679,59 @@ class countWSymbols{
 
     }
 }
+
+    class jmwm{
+        public static void main(String[] args) {
+
+            for ( int row = 0 ; row < 10; row ++){
+                for ( int column = 0; column < row; column++){
+
+                    System.out.print("*");
+                }
+
+                System.out.println();
+            }
+        }
+    }
+
+    class reverseStar {
+        public static void main(String[] args) {
+
+            for (int row = 0; row < 10; row++) {
+                for (int column =  10;  column > row ;  column--) {
+
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+
+    }
+
+
+    class removeSymbols{
+        public static void main(String[] args) {
+
+            String email = "ade_muqtar@gmail.com";
+
+            String [] a = email.split("[@_]");
+
+            for (String b : a){
+                System.out.println(b);
+            }
+        }
+    }
+
+    class removeSpacing{
+        public static void main(String[] args) {
+
+            String WORD = "hello how are you there";
+
+            String [] b = WORD.split(" ");
+
+            for ( String c : b){
+                System.out.print(c);
+            }
+
+        }
+    }
