@@ -776,3 +776,18 @@ class countWSymbols{
 
         }
         }
+
+        class j3k{
+            public static void main(String[] args) {
+
+                String [] color  = {"red", "green", "yellow", "black", "red", "grey", "yellow"};
+
+
+                ArrayList<String> color2 = new ArrayList<>(Arrays.asList(color));
+
+                color2.add("purple");
+                color2.add("violet");
+
+                System.out.println(color2);
+            }
+        }
