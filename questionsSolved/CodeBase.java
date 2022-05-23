@@ -564,3 +564,118 @@ class CountTheWord{
 
         }
     }
+
+
+
+    class jfk{
+        public static void main(String[] args) {
+
+            String name = "amazing";
+
+            int count = name.length();
+
+            int countWithoutA = name.replace("a", "").length();
+
+            int total = count - countWithoutA;
+
+            System.out.println("this is the total sum of 'a' ");
+
+            System.out.println(total);
+
+            System.out.println("total sum without 'a' ");
+            System.out.println(countWithoutA);
+
+        }
+    }
+
+    class SplitWith {
+        public static void main(String[] args) {
+
+            String word = "one, two, three";
+
+            String[] b = word.split(",");
+
+            for (String array : b) {
+                System.out.print(array);
+
+            }
+        }
+    }
+
+class Counting {
+    public static void main(String[] args) {
+
+        int vowels = 0;
+        int consonant = 0;
+        int digits = 0;
+        int spaces = 0;
+
+        String word = "what is the name of the city 67389";
+
+
+        for (int count = 0; count < word.length(); count++) {
+            char ch = word.charAt(count);
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                vowels++;
+            } else if (ch >= 'a' && ch <= 'z') {
+                consonant++;
+            } else if (ch >= '0' && ch <= '9') {
+                digits++;
+            } else if (ch == ' ') {
+                spaces++;
+
+            }
+        }
+
+            System.out.println(vowels);
+            System.out.println(consonant);
+            System.out.println(digits);
+            System.out.println(spaces);
+    }
+
+}
+
+
+class countWSymbols{
+    public static void main(String[] args) {
+
+
+        int vowels = 0;
+        int consonant = 0;
+        int digits = 0;
+        int spaces = 0;
+
+
+        String word = "How many weeks are there in a Months";
+
+        for ( int count = 0; count < word.length(); count++){
+            char ch = word.charAt(count);
+
+            if ( ch == 'a' || ch == 'e' || ch == 'i' || ch == 'u' || ch == 'o'){
+                vowels++;
+            }
+
+            else if  (ch  >=  'a' && ch <= 'z'){
+                consonant++;
+            }
+
+            else if ( ch >= '0' && ch <= '9'){
+                digits++;
+            }
+
+            else if (ch == ' '){
+                spaces++;
+            }
+
+        }
+
+
+        System.out.println(vowels);
+        System.out.println(consonant);
+        System.out.println(digits);
+        System.out.println(spaces);
+
+
+    }
+}
