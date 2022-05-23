@@ -1,6 +1,6 @@
 package Practise.questionsSolved;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class CodeBase {
 
@@ -751,3 +751,28 @@ class countWSymbols{
             }
         }
     }
+
+    class checkList {
+        public static void main(String[] args) {
+
+            ArrayList<String> name = new ArrayList<>();
+
+            name.add("tola");
+            name.add("shola");
+            name.add("bimpe");
+            name.add("ade");
+
+            System.out.println(name.size());
+            System.out.println(name);
+
+
+            Map<String, String> color = new HashMap<>();
+
+            color.put("red", "A");
+            color.put("blue", "B");
+            color.put("green", "C");
+
+            System.out.println(color);
+
+        }
+        }
