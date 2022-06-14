@@ -791,3 +791,72 @@ class countWSymbols{
                 System.out.println(color2);
             }
         }
+
+
+        class Trial{
+
+        public static void main(String [] args){
+
+            Scanner input = new Scanner(System.in);
+
+            System.out.println("enter first number");
+            int number = input.nextInt();
+
+            System.out.println("enter second number");
+            int number2 = input.nextInt();
+
+            int result = number + number2;
+
+            System.out.println("this is the total " + result);
+
+
+        }
+
+
+    }
+
+
+    class newClass{
+
+        public static void main(String[] args) {
+
+
+            Map<String, String> map = new HashMap<>();
+
+            map.put("name", "ade");
+            map.put("country", "Uk");
+            map.put("city", "london");
+
+            System.out.println(map);
+            System.out.println(map.values());
+            System.out.println(map.get("name"));
+        }
+    }
+
+
+    class ReversedString{
+        public static void main(String[] args) {
+
+            String name = "adetunji";
+
+            for (int count = name.length() -1; count >= 0; count--){
+
+                System.out.print(name.charAt(count));
+            }
+        }
+    }
+
+    class Arrray{
+        public static void main(String[] args) {
+
+            String[][] array = {{"X O X"}, {"O X O"}, {"X O X"}};
+
+            for (int row = 0; row < array.length; row++) {
+                for (int column = 0; column < array[row].length; column++) {
+
+                    System.out.println(array[row][column]);
+                }
+            }
+
+        }
+    }
