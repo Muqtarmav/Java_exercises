@@ -860,3 +860,44 @@ class countWSymbols{
 
         }
     }
+
+
+    class Splitting{
+        public static void main(String[] args) {
+
+            String word = "How are you feeling today";
+
+            int vowels = 0;
+            int consonant = 0;
+            int space = 0;
+            int digit = 0;
+
+
+            for ( int count = 0; count < word.length(); count++) {
+                char ch = word.charAt(count);
+
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+                    vowels++;
+                }
+
+                else if (ch >= 'a' &&  ch <= 'z'){
+                    consonant++;
+                }
+
+                else if (ch>= '1' && ch <= '9'){
+                    digit++;
+                }
+
+                else if ( ch == ' '){
+                    space++;
+                }
+            }
+
+
+            System.out.println("these are the vowels" + vowels++);
+            System.out.println("these are consonant" + consonant++);
+            System.out.println("number of digits" + digit++);
+            System.out.println("total spaces" + space++);
+
+        }
+    }
